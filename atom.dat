@@ -1,0 +1,12 @@
+start;
+
+insert Forward("a", "b"),
+insert Forward("c", "d"),
+insert Forward("a", "c"),
+insert Forward("b", "d"),
+
+commit;
+
+echo Atom:;
+dump Atoms;
+

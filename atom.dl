@@ -1,0 +1,7 @@
+input relation Forward(first: string, second: string)
+output relation Atoms(first: string, second: string, third: string, fourth: string)
+Atoms(a, b, c, d) :- Forward(a, b),
+                     Forward(c, d),
+                     Forward(a, c),
+                     Forward(b, d),
+                     b != c.  

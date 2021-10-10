@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ddlog -i atom.dl
+(cd atom_ddlog && cargo build --release)
+./atom_ddlog/target/release/atom_cli < atom.dat
+
